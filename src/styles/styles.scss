@@ -93,7 +93,7 @@ h6 {
 
 body {
 	font-family: 'PingFang SC';
-	background:  #1A1A1A;
+	background: $background;
 	font-size: 14px;
 	line-height: 22px;
 	color: rgba(255, 255, 255, 0.85);
@@ -107,7 +107,7 @@ body {
 
 .header {
 	padding: 48px 0px;
-	background: #0D0D0D;
+	background: $headerbackground;
 
 	.header__logo {
 		cursor: pointer;
@@ -138,10 +138,10 @@ body {
 			max-width: 672px;
 			max-height: 1120px;
 			background: #1A1A1A;
-			border: 1px dashed #9747FF;
+			border: 1px dashed $border;
 			border-radius: 5px;
-			padding: 0px;
 			gap: 24px;
+			padding: 16px 16px 16px 16px;
 		}
 
 		.accordion__second {
@@ -164,21 +164,25 @@ body {
 		.accordion__item.first {
 			background-color: $purple;
 			background: rgba(144, 127, 240, 0.16);
+			border: 1px solid rgba(144, 127, 240, 0.24);
 		}
 
 		.accordion__item.second {
 			background-color: $brown;
 			background: rgba(255, 166, 42, 0.16);
+			border: 1px solid rgba(255, 166, 42, 0.24);
 		}
 
 		.accordion__item.third {
 			background-color: $winered;
 			background: rgba(238, 83, 71, 0.16);
+			border: 1px solid rgba(238, 83, 71, 0.24);
 		}
 
 		.accordion__item.fourth {
 			background-color: $green;
 			background: rgba(60, 214, 163, 0.16);
+			border: 1px solid  rgba(60, 214, 163, 0.16);
 		}
 
 		.accordion__media {
@@ -213,7 +217,7 @@ body {
 			width: 54px;
 			height: 24px;
 			padding: 4px 8px;
-			color: #FFFFFF;
+			color: $font;
 		}
 
 		.btn__first {
